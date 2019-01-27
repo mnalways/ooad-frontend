@@ -28,9 +28,9 @@ $(document).ready(function() {
       data: formJson,
       dataType: "json",
       contentType: "application/json; charset=utf-8",
-      success: function() {
+      success: function(response) {
         //
-        console.log("success");
+        console.log(response);
       },
       error: function() {
         console.log("error");
