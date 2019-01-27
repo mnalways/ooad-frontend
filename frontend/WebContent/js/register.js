@@ -10,35 +10,31 @@ function sendInfo()
 	var v2=document.getElementById("pass").value;
 	console.log(v1+ " "  +v2);
 	
+	var formData = {}
+    formData["mobileNum"] = v1;    
+    formData["password"] = v2;    
+    
+    var formJson = JSON.stringify(formData);
+    console.log(formJson);
+
+	
+	
 	var url="http://localhost:8080/ooad/api/buyer/signup";  
 	  
-	if(window.XMLHttpRequest)
-	{  
-		request=new XMLHttpRequest();  
-	}  
-	else if(window.ActiveXObject)
-	{  
-		request=new ActiveXObject("Microsoft.XMLHTTP");  
-	}  
-	  
-	try  
-	{  
-		request.onreadystatechange=getInfo;  
-		request.open("POST",url,true);  
-		request.send();  
-	}  
-	catch(e)  
-	{  
-		alert("Unable to connect to server");  
-	}  
-}  
-  
-function getInfo()
-{  
-	if(request.readyState==4)
-	{  
-		var val=request.responseText;  
-		console.log(val);
-//		document.getElementById('amit').innerHTML=val;  
-	}  
+	
+    jQuery.ajax({
+        url: url,
+        type: "POST",
+        data: formJson,
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(response) {
+          //
+          console.log(response);
+        },
+        error: function() {
+          console.log("error");
+        }
+      });
+
 }  
