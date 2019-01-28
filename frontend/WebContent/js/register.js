@@ -8,12 +8,13 @@ function sendInfo()
 {  
 	var v1=document.getElementById("mob2").value;  
 	var v2=document.getElementById("pass").value;
-	console.log(v1+ " "  +v2);
+	var v3=document.getElementById("dob").value;
+	console.log(v1+ " "  +v2+" "+v3);
 	
 	var formData = {}
     formData["mobileNum"] = v1;    
     formData["password"] = v2;    
-    
+    formData["localDate"]=v3;
     var formJson = JSON.stringify(formData);
     console.log(formJson);
 
