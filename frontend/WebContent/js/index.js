@@ -6,7 +6,7 @@ $(document).ready(function() {
 	  $("#loginModal").css("display", "block");
 	  $("#signUpModal1").css("display", "none");
 	  $("#signUpModal2").css("display", "none");
-	  
+
 //	  $('#signUpModal1').modal('hide');
 //	  $('#signUpModal2').modal('hide');
 //	  $('#loginModal').modal('show');
@@ -30,24 +30,24 @@ $(document).ready(function() {
     $("#loginModal").css("display", "none");
     $("#signUpModal1").css("display", "block");
     $("#signUpModal2").css("display", "none");
-    
+
 //	$('#loginModal').modal('hide');
 //    $('#signUpModal1').modal('show');
 //	$('#signUpModal2').modal('hide');
   });
   //shardul from this point on
-  $('#continue').click(function(){ 
+  $('#continue').click(function(){
 		var mobileNo=$('#mob1').val();
 //		alert(mobileNo);
 		$('#mob1').val('');
 		$("#loginModal").css("display", "none");
 		$("#signUpModal1").css("display", "none");
 		$("#signUpModal2").css("display", "block");
-		
+
 //		$('#loginModal').modal('hide');
 //	    $('#signUpModal1').modal('hide');
 //		$('#signUpModal2').modal('show');
-		
+
 		$("#mob2").val(mobileNo);
 	  });
 });
