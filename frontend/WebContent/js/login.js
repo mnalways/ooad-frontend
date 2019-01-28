@@ -26,9 +26,14 @@ $(document).ready(function() {
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       success: function(response) {
-        //
-        console.log(response);
-        if (response != undefined) {} else {}
+        if (response != undefined) {
+          for (var key in response) {
+            localStorage.setItem(key, response[key]);
+            window.location.href = "http://localhost:8080/frontend/";
+          }
+        } else {
+          //error
+        }
       },
       error: function() {
         console.log("error");
