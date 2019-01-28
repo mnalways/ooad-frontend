@@ -4,12 +4,9 @@ $(document).ready(function() {
     var loginForm = document.forms.namedItem("loginForm");
     var formData = {}
     for (i = 0; i < loginForm.length - 1; i++) {
-      console.log(loginForm.elements[i].value);
-      console.log(loginForm.elements[i].name);
       formData[loginForm.elements[i].name] = loginForm.elements[i].value;
     }
     var formJson = JSON.stringify(formData);
-    console.log(formJson);
     var url = "http://localhost:8080/ooad/api/buyer/login";
 
     // $.post(url, formJson, function(data, status, jqXHR) {
@@ -29,8 +26,14 @@ $(document).ready(function() {
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       success: function(response) {
-        //
-        console.log(response);
+        if (response != undefined) {
+          for (var key in response) {
+            localStorage.setItem(key, response[key]);
+            window.location.href = "http://localhost:8080/frontend/";
+          }
+        } else {
+          //error
+        }
       },
       error: function() {
         console.log("error");
