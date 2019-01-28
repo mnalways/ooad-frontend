@@ -26,13 +26,16 @@ $(document).ready(function() {
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       success: function(response) {
+        console.log("hello");
         if (response != undefined) {
           for (var key in response) {
             localStorage.setItem(key, response[key]);
             window.location.href = "http://localhost:8080/frontend/";
           }
         } else {
-          //error
+          document.getElementById("amit2").innerText="wrong username or password";
+
+          console.log("error");
         }
       },
       error: function() {

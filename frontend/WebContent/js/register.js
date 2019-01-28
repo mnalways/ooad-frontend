@@ -4,14 +4,14 @@ $(document).ready(function() {
 		var v1=document.getElementById("mob2").value;
 		var v2=document.getElementById("pass").value;
 		var v3=document.getElementById("dob").value;
-		console.log(v1+ " "  +v2+" "+v3);
+		//console.log(v1+ " "  +v2+" "+v3);
 
 		var formData = {}
 	    formData["mobileNum"] = v1;
 	    formData["password"] = v2;
 	    formData["DOB"]=v3;
 	    var formJson = JSON.stringify(formData);
-	    console.log(formJson);
+	    //console.log(formJson);
 
 
 	var url="http://localhost:8080/ooad/api/buyer/signup";
@@ -24,12 +24,19 @@ $(document).ready(function() {
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function(response) {
-          console.log(response);
-					if(response==undefined){
+          var returnedData = JSON.parse(response);
+					var x=response;
+					console.log(returnedData);
+					console.log(x);
+					if(x==true){
 					window.location.href = "http://localhost:8080/frontend/"
         }
+				else {
+					document.getElementById("amit1").innerText="user already exists";
+				}
 			},
         error: function() {
+					console.log("error");
 					console.log(response);
         }
       });
