@@ -14,7 +14,7 @@ function sendInfo()
 	var formData = {}
     formData["mobileNum"] = v1;    
     formData["password"] = v2;    
-    formData["localDate"]=v3;
+    formData["DOB"]=v3;
     var formJson = JSON.stringify(formData);
     console.log(formJson);
 
