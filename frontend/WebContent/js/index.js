@@ -91,7 +91,13 @@ $(document).ready(function() {
     var v99 = $('#mob1').val();
     console.log(v99);
     //		alert(mobileNo);
+    if(v99=="")
+    {
+        document.getElementById("amit3").innerText = "this field is empty";
 
+    }
+    
+    else{
     var url = "http://localhost:8080/ooad/api/buyer/validate";
 
 
@@ -134,5 +140,5 @@ $(document).ready(function() {
         console.log(response);
       }
     });
-  });
+  }});
 });
