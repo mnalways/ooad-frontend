@@ -113,6 +113,8 @@ $(document).ready(function() {
 
           //window.location.href = "http://localhost:8080/frontend/"
         } else {
+        	document.getElementById("signup2").reset();
+
           console.log("user dont already exists");
           $('#mob1').val('');
           $("#loginModal").css("display", "none");

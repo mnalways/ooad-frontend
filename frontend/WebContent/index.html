@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <!-- replace all 'row'->'wor' & 'col'->'loc' to avoid classes conflict with bootstrap -->
@@ -102,6 +101,10 @@
 				<div class="modal-body" style="padding:0">
 
 
+
+
+
+
 					<div id="loginModal" class="uMF2cc" style="display:none;">
 						<div class="_1XBjg- wor _3Nz-h3">
 							<div class="Og_iib loc loc-2-5 _3SWFXF _2Bol6j"><span class="_1hgiYz"><span>Login</span></span>
@@ -110,9 +113,22 @@
 							<div class="Km0IJL loc loc-3-5">
 								<div>
 									<form id="loginForm" autocomplete="off">
-										<div class="_39M2dM"><input type="text" name="mobileNum" autocomplete="off" autofocus="" class="_2zrpKA" value=""><span class="s-YM1W"></span><label class="b5konl"><span>Enter Email/Mobile number</span></label></div>
-										<span class="ZAtlA-"><span>Your username or password is incorrect</span></span>
-										<div class="_39M2dM"><input type="password" name="password" autocomplete="off" class="_2zrpKA _3v41xv" value=""><span class="s-YM1W"></span><label class="b5konl"><span>Enter Password</span></label><a class="_21JmK0 _1__46T" tabindex="-1"><span>Forgot?</span></a></div>
+										<div class="_39M2dM"><input type="text" name="mobileNum" autocomplete="off" autofocus="" class="_2zrpKA" value="" placeholder="Enter Email/Mobile number">
+											<span class="s-YM1W"></span>
+											<!--<label class="b5konl"><span>Enter Email/Mobile number</span></label>-->
+											<!--label-->
+											<span class="ZAtlA-" id="amit2"></span>
+											<!--warning incorrect login-->
+										</div>
+
+										<!--					<span class="ZAtlA-"><span>Your username or password is incorrect</span></span> -->
+
+										<div class="_39M2dM"><input type="password" name="password" autocomplete="off" class="_2zrpKA _3v41xv" value="" placeholder="Enter Password">
+											<span class="s-YM1W"></span>
+											<!--	<label class="b5konl"><span>Enter Password</span></label>-->
+											<a class="_21JmK0 _1__46T" tabindex="-1"><span>Forgot?</span></a>
+										</div>
+
 										<div class="_1avdGP"><button id="loginButton" class="_2AkmmA _1LctnI _7UHT_c">
 												<div class="_2VTdOs _1_qmw3"><svg class="_2zN0mv" viewBox="25 25 50 50">
 														<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
@@ -130,7 +146,7 @@
 						</div>
 					</div>
 
-
+					<!--first signup page that appears on clicking " new to flipkart? sign up "-->
 					<div id="signUpModal1" class="_32LSmx" style="display:none;">
 						<div class=" _1XBjg- wor">
 							<div class="Og_iib loc loc-2-5 _3SWFXF">
@@ -141,7 +157,12 @@
 								<div>
 									<form>
 										<!-- added id 'mob1' here -->
-										<div class="_39M2dM"><input type="text" maxlength="10" autocomplete="off" class="_2zrpKA" value="" id="mob1"><span class="s-YM1W"></span><label class="b5konl"><span>Enter Mobile number</span></label></div>
+										<div class="_39M2dM"><input type="text" maxlength="10" autocomplete="off" class="_2zrpKA" value="" id="mob1" placeholder="Enter Mobile number">
+											<span class="s-YM1W"></span><label class="b5konl">
+												<!--<span>Enter Mobile number</span>-->
+											</label> <span class="ZAtlA-" id="amit3"></span>
+
+										</div>
 									</form>
 									<!-- added id 'continue' here -->
 									<div class="_1avdGP">
@@ -161,7 +182,7 @@
 						</div>
 					</div>
 
-
+					<!--second signup page that appears on clicking " continue "-->
 					<div id="signUpModal2" class="_32LSmx" style="display:none;">
 						<div class="_1XBjg- wor">
 							<div class="Og_iib loc loc-2-5 _3SWFXF"><span class="_1hgiYz"><span>Signup</span></span>
@@ -169,126 +190,93 @@
 							</div>
 							<div class="Km0IJL loc loc-3-5">
 								<div>
-									<form>
+									<form id="signup2">
 
 
 
-
+										<!-- belongs to utkarsh-->
 
 										<!-- added id 'mob2' here -->
 										<div class="_39M2dM"><input type="text" readonly="" autocomplete="off" class="_2zrpKA _2rqcw- _2VUCMV _3v41xv" id="mob2">
 											<span class="s-YM1W _2rqcw-"></span>
-											<label class="b5konl _2rqcw-"><span>Mobile Number</span></label>
+											<label class="b5konl _2rqcw-"><span>Mobile Number</span></label><span class="ZAtlA-" id="amit1"></span>
 
 											<span class="eyCtv2">+91</span>
 											<!-- added class 'signUpb1' here, and removed hyperlink 'href="https://www.flipkart.com/#"' -->
 											<a class="_21JmK0 _1__46T signUpb1" tabindex="-1"><span>Change?</span></a>
 										</div>
 
-
-
-
-
 										<!-- addded pass here -->
 										<div>
-											<div class="_39M2dM"><input type="password" autocomplete="off" class="_2zrpKA" id="pass">
+											<div class="_39M2dM"><input type="password" autocomplete="off" class="_2zrpKA" id="pass" placeholder="Set Password">
 												<span class="s-YM1W"></span>
-												<label class="b5konl"><span>Set Password</span></label>
+												<label class="b5konl">
+													<!--<span>Set Password</span>-->
+												</label>
 											</div>
 										</div>
 
 										<!-- addded dob here -->
 										<div>
-											<span>Set DateOfBirth</span>
+											<span>DateOfBirth</span>
 											<div class="_39M2dM"><input type="date" autocomplete="off" class="_2zrpKA" id="dob">
 												<span class="s-YM1W"></span>
 												<label class="b5konl"></label>
 											</div>
 										</div>
 
+									</form>
 
+									<div class="_1avdGP">
+										<button id="registerButton" class="_2AkmmA _1LctnI _7UHT_c">
+											<div class="_2VTdOs _1_qmw3">
+												<svg class="_2zN0mv" viewBox="25 25 50 50">
+													<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
+												</svg>
+											</div>
+											<span>
+												<!-- UTKARSHUTKARSHUTKARSHUTKARSHUTKARSH --> Signup
+											</span>
+											<!-- added class 'logInb1' here -->
+											<!-- changed from button to link, similar to that in 'signUpModal1' -->
+											<div class="_2VTdOs _1_qmw3">
+												<svg class="_2zN0mv" viewBox="25 25 50 50">
+													<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
+												</svg>
+											</div>
+										</button>
+										<a class="_2AkmmA _1LctnI jUwFiZ logInb1">
+											<span>
+												Existing User? Log in
+											</span>
+										</a>
+									</div>
 
 
 								</div>
-
-								<div class="_1avdGP">
-									<button onclick="register()" class="_2AkmmA _1LctnI _7UHT_c" type="submit">
-										<div class="_2VTdOs _1_qmw3">
-											<svg class="_2zN0mv" viewBox="25 25 50 50">
-												<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-											</svg>
-										</div>
-										<span>
-											<!-- UTKARSHUTKARSHUTKARSHUTKARSHUTKARSH --> Signup
-										</span>
-										<!-- added class 'logInb1' here -->
-										<!-- changed from button to link, similar to that in 'signUpModal1' -->
-										<div class="_2VTdOs _1_qmw3">
-											<svg class="_2zN0mv" viewBox="25 25 50 50">
-												<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-											</svg>
-										</div>
-										<span>
-									</button>
-									<a class="_2AkmmA _1LctnI jUwFiZ logInb1">
-										<span>
-											Existing User? Log in
-										</span>
-									</a>
-								</div>
-								<!--										<span> Signup
-										</span>
-										<!-- added class 'logInb1' here -->
-								<!-- changed from button to link, similar to that in 'signUpModal1' -->
-								<!--										<div class="_2VTdOs _1_qmw3">
-											<svg class="_2zN0mv" viewBox="25 25 50 50">
-												<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-											</svg>
-										</div>
-										<span>
-											Signup
-										</span>
-										<!-- added class 'logInb1' here -->
-								<!-- changed from button to link, similar to that in 'signUpModal1' -->
-								<!--									</button>
-									<a class="_2AkmmA _1LctnI jUwFiZ logInb1">
-										<span>
-											Existing User? Log in
-										</span>
-									</a>
-								</div>
--->
-
-
-
-
-
-								<!--
-										<div class="_1avdGP"><button class="_2AkmmA _1LctnI _7UHT_c" type="submit">
-												<div class="_2VTdOs _1_qmw3"><svg class="_2zN0mv" viewBox="25 25 50 50">
-														<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-													</svg></div><span>Signup</span>
-												added class 'logInb1' here
-												changed from button to link, similar to that in 'signUpModal1'
-	 										</button><a class="_2AkmmA _1LctnI jUwFiZ logInb1"><span>Existing User? Log in</span></a></div>
-										-->
-
-								</form>
 							</div>
 						</div>
+
+
+
+
+
+						</form>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
+
+
+	</div>
+	</div>
 	</div>
 	</div>
 
 	<!-- carousel -->
 	<!-- Greeting message -->
 	<div class="container puxlXr style="">
-		<h4 class="user" style="display:none">Hi <span id="printName">Malinda!</span>,</h4>
+		<h4 class=" user" style="display:none">Hi <span id="printName">Malinda!</span>,</h4>
 		<h4>
 			<span class="birthday" style="display: none;">Happy Birthday! See exciting offers for you on your birthday.
 			</span><br>
@@ -308,7 +296,7 @@
 					<li data-target="#myCarousel" data-slide-to="3"></li>
 				</ol>
 
--->
+				-->
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
@@ -543,465 +531,3 @@
 </body>
 
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<!-- replace all 'row'->'wor' & 'col'->'loc' to avoid classes conflict with bootstrap -->
-
-<head>
-	<title>Home</title>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/register.js"></script>
-<!--	<script src="js/validate.js"></script>-->
-	<script src="js/login.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script src="js/bootstrap.min.js"></script>
-
-	<style>
-		#carosel{
-			width: 100%;
-			max-height: 500px;
-		}
-		.carousel-inner{
-			width:100%;
-			max-height: 500px !important;
-		}
-		.carousel-inner  .item  img {
-			width:100%;
-			height:200px;
-		}
-		.container {
-  			width:100%;
-		}
-	</style>
-</head>
-
-<body>
-	<!-- flipkart header-->
-	<header class="CGBNf7 _1tYwJP">
-		<div class="_1tz-RS">
-			<div class="AsXM8z">
-				<div class="_2OJxl5">
-					<a href="index.html"><img width="75" src="img/flipkart-plus_4ee2f9.png" alt="Flipkart" title="Flipkart" class="jnSYHL"></a>
-					<a class="_3_cfX8" href="plus.html" style="color:white">Explore
-						<!-- --> <span class="DJrnBo">Plus</span><img width="10" src="img/plus_b13a8b.png"></a></div>
-				<div class="_1NLCcM">
-					<form class="_1WMLwI header-form-search" action="#" method="GET">
-						<div class="wor">
-							<div class="loc-11-12">
-								<div class="O8ZS_U">
-									<input type="text" value="" class="LM6RPg" title="Search for products, brands and more" name="q" autocomplete="off" placeholder="Search for products, brands and more">
-								</div>
-							</div>
-							<div class="loc-1-12">
-								<button class="vh79eN" type="submit">
-									<svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg">
-										<g fill="#2874F1" fill-rule="evenodd">
-											<path class="_2BhAHa" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path>
-											<path class="_2BhAHa" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path>
-										</g>
-									</svg>
-								</button>
-							</div>
-							<input type="hidden" name="otracker" value="search">
-							<input type="hidden" name="otracker1" value="search">
-							<input type="hidden" name="marketplace" value="FLIPKART">
-							<input type="hidden" name="as-show" value="off">
-							<input type="hidden" name="as" value="off">
-						</div>
-						<ul class="loc-11-12 _1PBbw8"></ul>
-					</form>
-				</div>
-				<div class="_1Wr4v5">
-					<div class="JvUE0p">
-						<!-- added class 'logInb1' here -->
-						<div class="_2f5Jjv logInb1" data-toggle="modal" data-target="#modal">Login &amp; Signup</div>
-					</div>
-					<div class="JvUE0p">
-						<div class="_2f5Jjv">
-							<div class="_1jcwFN qt4LQw"><span>More</span></div>
-							<svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_3eosFR">
-								<path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2GxHSA"></path>
-							</svg>
-						</div>
-					</div>
-					<a class="_3NFO0d JvUE0p" href="viewcart?otracker=Cart_Icon_Click">
-						<div class="_2f5Jjv">
-							<svg class="_1-mlum" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-								<path class="_21lxeA" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
-								  fill="#fff"></path>
-							</svg><span>Cart</span></div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!--  flipkart category subcategory drop down meny-->
-
-	<!-- Body -->
-	<!-- model for login page -->
-	<!-- added modal here -->
-	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<!-- set width and height here -->
-			<div class="modal-content" style="padding:0">
-				<div class="modal-body" style="padding:0">
-
-					<!--login page which appears on clicking Login&Signup from homepagge-->
-					<div id="loginModal" class="uMF2cc" style="display:none;">
-						<div class="_1XBjg- wor _3Nz-h3">
-							<div class="Og_iib loc loc-2-5 _3SWFXF _2Bol6j"><span class="_1hgiYz"><span>Login</span></span>
-								<p class="_1NJjZd"><span>Get access to your Orders, Wishlist and Recommendations</span></p>
-							</div>
-							<div class="Km0IJL loc loc-3-5">
-								<div>
-									<form id="loginForm" autocomplete="off">
-										<div class="_39M2dM"><input type="text" name="mobileNum" autocomplete="off" autofocus="" class="_2zrpKA" value="" placeholder="Enter Email/Mobile number">
-												<span class="s-YM1W"></span>
-													<!--<label class="b5konl"><span>Enter Email/Mobile number</span></label>--><!--label-->
-												<span  class="ZAtlA-" id="amit2"></span>		<!--warning incorrect login-->
-										</div>
-
-										<!--					<span class="ZAtlA-"><span>Your username or password is incorrect</span></span> -->
-
-										<div class="_39M2dM"><input type="password" name="password" autocomplete="off" class="_2zrpKA _3v41xv" value="" placeholder="Enter Password">
-											<span class="s-YM1W"></span>
-										<!--	<label class="b5konl"><span>Enter Password</span></label>-->
-											<a class="_21JmK0 _1__46T" tabindex="-1"><span>Forgot?</span></a>
-										</div>
-
-										<div class="_1avdGP"><button id="loginButton" class="_2AkmmA _1LctnI _7UHT_c">
-												<div class="_2VTdOs _1_qmw3"><svg class="_2zN0mv" viewBox="25 25 50 50">
-														<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-													</svg></div><span>Login</span>
-												<!-- changed id 'signUpb1' to class -->
-											</button></div><a class="_2AkmmA _1LctnI jUwFiZ signUpb1"><span>New to Flipkart? Sign up</span></a>
-										<div class="_2Q8OlA">
-											<div class="S5kkau"><span>We no longer support login via Social accounts. To recover your old accounts please </span>
-												<div class="_20yN1P"><span class="_2ykT1U">click here</span></div>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--first signup page that appears on clicking " new to flipkart? sign up "-->
-					<div id="signUpModal1" class="_32LSmx" style="display:none;">
-						<div class=" _1XBjg- wor">
-							<div class="Og_iib loc loc-2-5 _3SWFXF">
-								<span class="_1hgiYz"><span>Signup</span></span>
-								<p class="_1NJjZd"><span>We do not share your personal details with anyone.</span></p>
-							</div>
-							<div class="Km0IJL loc loc-3-5">
-								<div>
-									<form>
-										<!-- added id 'mob1' here -->
-										<div class="_39M2dM"><input type="text" maxlength="10" autocomplete="off" class="_2zrpKA" value="" id="mob1" placeholder="Enter Mobile number">
-												<span class="s-YM1W"></span><label class="b5konl">
-												<!--<span>Enter Mobile number</span>-->
-											</label>												<span  class="ZAtlA-" id="amit3"></span>
-
-										</div>
-									</form>
-									<!-- added id 'continue' here -->
-									<div class="_1avdGP">
-										<button class="_2AkmmA _1LctnI _7UHT_c" id="continue">
-											<div class="_2VTdOs _1_qmw3">
-												<svg class="_2zN0mv" viewBox="25 25 50 50">
-													<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-												</svg>
-											</div>
-											<span>CONTINUE</span>
-											<!-- added class 'logInb1' here, and removed hyperlink href="https://www.flipkart.com/account/login?ret=/" -->
-										</button>
-										<a class="_2AkmmA _1LctnI jUwFiZ logInb1"><span>Existing User? Log in</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--second signup page that appears on clicking " continue "-->
-					<div id="signUpModal2" class="_32LSmx" style="display:none;">
-						<div class="_1XBjg- wor">
-							<div class="Og_iib loc loc-2-5 _3SWFXF"><span class="_1hgiYz"><span>Signup</span></span>
-								<p class="_1NJjZd"><span>We do not share your personal details with anyone.</span></p>
-							</div>
-							<div class="Km0IJL loc loc-3-5">
-								<div>
-									<form>
-
-
-
-												<!-- belongs to utkarsh-->
-
-										<!-- added id 'mob2' here -->
-										<div class="_39M2dM"><input type="text" readonly="" autocomplete="off" class="_2zrpKA _2rqcw- _2VUCMV _3v41xv" id="mob2">
-											<span class="s-YM1W _2rqcw-" ></span>
-											<label class="b5konl _2rqcw-"><span >Mobile Number</span></label><span  class="ZAtlA-" id="amit1"></span>
-
-											<span class="eyCtv2">+91</span>
-											<!-- added class 'signUpb1' here, and removed hyperlink 'href="https://www.flipkart.com/#"' -->
-											<a class="_21JmK0 _1__46T signUpb1" tabindex="-1"><span>Change?</span></a>
-										</div>
-
-										<!-- addded pass here -->
-										<div>
-											<div class="_39M2dM"><input type="password" autocomplete="off" class="_2zrpKA" id="pass" placeholder="Set Password">
-												<span class="s-YM1W"></span>
-												<label class="b5konl">
-													<!--<span>Set Password</span>-->
-												</label>
-											</div>
-										</div>
-
-										<!-- addded dob here -->
-										<div>
-											<span>DateOfBirth</span>
-											<div class="_39M2dM"><input type="date" autocomplete="off" class="_2zrpKA" id="dob">
-												<span class="s-YM1W"></span>
-												<label class="b5konl"></label>
-											</div>
-										</div>
-
-									</form>
-
-										<div class="_1avdGP">
-											<button id="registerButton" class="_2AkmmA _1LctnI _7UHT_c">
-													<div class="_2VTdOs _1_qmw3">
-														<svg class="_2zN0mv" viewBox="25 25 50 50">
-															<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-														</svg>
-													</div>
-													<span>
-															<!-- UTKARSHUTKARSHUTKARSHUTKARSHUTKARSH -->					Signup
-													</span>
-													<!-- added class 'logInb1' here -->
-													<!-- changed from button to link, similar to that in 'signUpModal1' -->
-												<div class="_2VTdOs _1_qmw3">
-													<svg class="_2zN0mv" viewBox="25 25 50 50">
-														<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-													</svg>
-												</div>
-											</button>
-											<a class="_2AkmmA _1LctnI jUwFiZ logInb1">
-												<span>
-													Existing User? Log in
-												</span>
-											</a>
-										</div>
-
-
-							</div>
-						</div>
-					</div>
-						</div>
-
-
-			</div>
-		</div>
-	</div>
-	</div>
-
-	<!-- carousel -->
-	<div class="container">
-		<h3>Featured Deals</h3>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-
-				<div class="item active">
-					<img src="./img/offer/img1.jpg" alt="Los Angeles" style="width:100%;">
-					<div class="carousel-caption">
-						<h3>Los Angeles</h3>
-						<p>LA is always so much fun!</p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="./img/offer/img2.jpg" alt="Chicago" style="width:100%;">
-					<div class="carousel-caption">
-						<h3>Chicago</h3>
-						<p>Thank you, Chicago!</p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="./img/offer/img3.jpg" alt="New York" style="width:100%;">
-					<div class="carousel-caption">
-						<h3>New York</h3>
-						<p>We love the Big Apple!</p>
-					</div>
-				</div>
-
-			</div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-
-		<!------------------------------------------------------------------------------------------>
-		<!---Multiple Item carousel---------------------------------------------------->
-
-		<h3>Special Discount</h3>
-		<div id="Carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
-
-			<ol class="carousel-indicators">
-				<li data-target="#Carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#Carousel" data-slide-to="1"></li>
-				<li data-target="#Carousel" data-slide-to="2"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-
-			<div class="carousel-inner">
-				<div class="item active">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img1.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Splash Running Shoes</h4>
-									<p class="card-text">(Blue, Black)</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img2.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Splash Running</h4>
-									<p class="card-text">(Blue, Black)</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img3.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!--second slide------>
-
-				<div class="item ">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img4.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img5.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img2.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!--third slide------>
-
-				<div class="item ">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img4.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img1.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img2.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#Carousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#Carousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-
-	</div>
-
-</body>
-
-</html>
->>>>>>> branch 'master' of https://github.com/jagmeet787/ooad-frontend.git
