@@ -29,8 +29,9 @@ $(document).ready(function() {
         if (response != undefined) {
           for (var key in response) {
             localStorage.setItem(key, response[key]);
-            window.location.href = "http://localhost:8080/frontend/";
           }
+          console.log(localStorage);
+           window.location.href = "http://localhost:8080/frontend/";
         } else {
           //error
         }

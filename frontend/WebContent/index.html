@@ -69,7 +69,7 @@
 				<div class="_1Wr4v5">
 					<div class="JvUE0p">
 						<!-- added class 'logInb1' here -->
-						<div class="_2f5Jjv logInb1" data-toggle="modal" data-target="#modal">Login &amp; Signup</div>
+						<div class="_2f5Jjv logInb1 username" data-toggle="modal" data-target="#modal">Login &amp; Signup</div>
 					</div>
 					<div class="JvUE0p">
 						<div class="_2f5Jjv">
@@ -79,7 +79,7 @@
 							</svg>
 						</div>
 					</div>
-					<a class="_3NFO0d JvUE0p" href="viewcart?otracker=Cart_Icon_Click">
+					<a class="_3NFO0d JvUE0p" href="index.html">
 						<div class="_2f5Jjv">
 							<svg class="_1-mlum" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 								<path class="_21lxeA" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
@@ -210,36 +210,36 @@
 
 								</div>
 
-										<div class="_1avdGP">
-											<button onclick="register()" class="_2AkmmA _1LctnI _7UHT_c" type="submit">
-													<div class="_2VTdOs _1_qmw3">
-														<svg class="_2zN0mv" viewBox="25 25 50 50">
-															<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-														</svg>
-													</div>
-													<span>
-<!-- UTKARSHUTKARSHUTKARSHUTKARSHUTKARSH -->					Signup
-													</span>
-													<!-- added class 'logInb1' here -->
-													<!-- changed from button to link, similar to that in 'signUpModal1' -->
-												<div class="_2VTdOs _1_qmw3">
-													<svg class="_2zN0mv" viewBox="25 25 50 50">
-														<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
-													</svg>
-												</div>
-												<span>
-											</button>
-											<a class="_2AkmmA _1LctnI jUwFiZ logInb1">
-												<span>
-													Existing User? Log in
-												</span>
-											</a>
+								<div class="_1avdGP">
+									<button onclick="register()" class="_2AkmmA _1LctnI _7UHT_c" type="submit">
+										<div class="_2VTdOs _1_qmw3">
+											<svg class="_2zN0mv" viewBox="25 25 50 50">
+												<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
+											</svg>
 										</div>
-<!--										<span> Signup
+										<span>
+											<!-- UTKARSHUTKARSHUTKARSHUTKARSHUTKARSH --> Signup
 										</span>
 										<!-- added class 'logInb1' here -->
 										<!-- changed from button to link, similar to that in 'signUpModal1' -->
-<!--										<div class="_2VTdOs _1_qmw3">
+										<div class="_2VTdOs _1_qmw3">
+											<svg class="_2zN0mv" viewBox="25 25 50 50">
+												<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
+											</svg>
+										</div>
+										<span>
+									</button>
+									<a class="_2AkmmA _1LctnI jUwFiZ logInb1">
+										<span>
+											Existing User? Log in
+										</span>
+									</a>
+								</div>
+								<!--										<span> Signup
+										</span>
+										<!-- added class 'logInb1' here -->
+								<!-- changed from button to link, similar to that in 'signUpModal1' -->
+								<!--										<div class="_2VTdOs _1_qmw3">
 											<svg class="_2zN0mv" viewBox="25 25 50 50">
 												<circle stroke="#fff" class="_1VgS7d" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
 											</svg>
@@ -248,8 +248,8 @@
 											Signup
 										</span>
 										<!-- added class 'logInb1' here -->
-										<!-- changed from button to link, similar to that in 'signUpModal1' -->
-<!--									</button>
+								<!-- changed from button to link, similar to that in 'signUpModal1' -->
+								<!--									</button>
 									<a class="_2AkmmA _1LctnI jUwFiZ logInb1">
 										<span>
 											Existing User? Log in
@@ -285,40 +285,62 @@
 	</div>
 
 	<!-- carousel -->
+	<!-- Greeting message -->
+	<div class="container puxlXr style="">
+		<h4 class="user" style="display:none">Hi <span id="printName">Malinda!</span>,</h4>
+		<h4>
+			<span class="birthday" style="display: none;">Happy Birthday! See exciting offers for you on your birthday.
+			</span><br>
+			<span class="user" style="display: none">Enjoy Shopping!</span>
+		</h4>
+	</div>
+
 	<div class="container">
-		<h3>Featured Deals</h3>
+		<h3 class="puxlXr">Featured Deals</h3>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
+			<!-- indicators look bad so removed it -->
+			<!-- 				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+-->
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 
 				<div class="item active">
-					<img src="./img/offer/img1.jpg" alt="Los Angeles" style="width:100%;">
+					<img src="./img/offer/img1.jpg" alt="mi days" style="width:100%;">
 					<div class="carousel-caption">
-						<h3>Los Angeles</h3>
-						<p>LA is always so much fun!</p>
+						<h3></h3>
+						<p></p>
 					</div>
 				</div>
 
 				<div class="item">
-					<img src="./img/offer/img2.jpg" alt="Chicago" style="width:100%;">
+					<img src="./img/offer/img2.jpg" alt="saving" style="width:100%;">
 					<div class="carousel-caption">
-						<h3>Chicago</h3>
-						<p>Thank you, Chicago!</p>
+						<h3></h3>
+						<p></p>
 					</div>
 				</div>
 
 				<div class="item">
-					<img src="./img/offer/img3.jpg" alt="New York" style="width:100%;">
+					<img src="./img/offer/img3.jpg" alt="lifestyle" style="width:100%;">
 					<div class="carousel-caption">
-						<h3>New York</h3>
-						<p>We love the Big Apple!</p>
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="./img/offer/img4.jpg" alt="well" style="width:100%;">
+					<div class="carousel-caption">
+						<h3></h3>
+						<p></p>
 					</div>
 				</div>
 
@@ -338,13 +360,16 @@
 		<!------------------------------------------------------------------------------------------>
 		<!---Multiple Item carousel---------------------------------------------------->
 
-		<h3>Special Discount</h3>
+
+		<h3 class="puxlXr birthday">Birthday Discounts</h3>
+		<h3 class="puxlXr not-birthday">Discounts</h3>
 		<div id="Carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
 
 			<ol class="carousel-indicators">
 				<li data-target="#Carousel" data-slide-to="0" class="active"></li>
 				<li data-target="#Carousel" data-slide-to="1"></li>
 				<li data-target="#Carousel" data-slide-to="2"></li>
+				<li data-target="#Carousel" data-slide-to="3"></li>
 			</ol>
 
 			<!-- Wrapper for slides -->
@@ -354,70 +379,95 @@
 					<div class="row">
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img1.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/redmi-note-5-pro.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Splash Running Shoes</h4>
-									<p class="card-text">(Blue, Black)</p>
+									<h4 class="card-title iUmrbN">Redmi Note 6 Pro</h4>
+									<p class="card-text BXlZdc">12MP+5MP | 20MP+2MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66"> &#x20b9 14,999 </div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 12,999</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 13,499</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img2.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/honor-9n.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Splash Running</h4>
-									<p class="card-text">(Blue, Black)</p>
+									<h4 class="card-title iUmrbN">Honor 9N</h4>
+									<p class="card-text BXlZdc">13MP+2MP | 16MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 8,499</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 7,599</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 7,999</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img3.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/realme-2.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
+									<h4 class="card-title iUmrbN">Realme 2 Pro</h4>
+									<p class="card-text BXlZdc">16MP+2MP | 16MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 13,990</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 12,500</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 12,999</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 				<!--second slide------>
 
 				<div class="item ">
 					<div class="row">
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img4.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/nokia-6-1-plus.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
+									<h4 class="card-title iUmrbN">Nokia 6.1 Plus</h4>
+									<p class="card-text BXlZdc">16MP+5MP | 16MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 14,999</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 13,499</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 13,999</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img5.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/redmi-note-5-pro.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
+									<h4 class="card-title iUmrbN">Redmi Note 5 Pro</h4>
+									<p class="card-text BXlZdc">12MP+5MP | 20MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 12,999</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 11,999</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 12,499</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img2.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/realme-2.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
+									<h4 class="card-title iUmrbN">Realme 2</h4>
+									<p class="card-text BXlZdc">13MP+2MP | 8MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 9,499</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 8,999</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 9,299</div>
 								</div>
 							</div>
 						</div>
@@ -430,33 +480,45 @@
 					<div class="row">
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img4.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/realme-c1.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
+									<h4 class="card-title iUmrbN">Realme C1</h4>
+									<p class="card-text BXlZdc">13MP+2MP | 5MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 7,499</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 6,399</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 6,999</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img1.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/google-pixel-3-xl.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
+									<h4 class="card-title iUmrbN">Google Pixel 3 XL</h4>
+									<p class="card-text BXlZdc">12.2MP | 8MP+8MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 83,000</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 78,999</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 80,000</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4">
 							<div class="card mb-2">
-								<img class="card-img-top" src="./img/item/img2.jpg" alt="Card image cap">
+								<img class="card-img-top" src="./img/item/infinix-hot-s3x.jpeg" alt="mobile deal" style="width: 25%; height: 25%">
 								<div class="card-body">
-									<h4 class="card-title">Card title</h4>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-										card's content.</p>
+									<h4 class="card-title iUmrbN">Infinix Hot S3x</h4>
+									<p class="card-text BXlZdc">13MP+2MP | 16MP Camera</p>
+									<strike style="color:red">
+										<div class="_3o3r66">&#x20b9 9,990</div>
+									</strike>
+									<div class="_3e_Ruh birthday">Birthday Special &#x20b9 7,500</div>
+									<div class="_3e_Ruh not-birthday">Now at &#x20b9 8,999</div>
 								</div>
 							</div>
 						</div>
